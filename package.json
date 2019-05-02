@@ -11,9 +11,13 @@
     "build:production": "npm run prestart && npm prune --production",
     "test": "echo \"No tests yet...\""
   },
-  "dependencies": {},
+  "dependencies": {
+    "emoji-dictionary": "^1.0.10",
+    "euclidean-distance": "^1.0.0"
+  },
   "devDependencies": {
     "@azure/functions": "^1.0.2-beta2",
+    "jimp": "^0.6.4",
     "typescript": "^3.3.3"
   }
 }
