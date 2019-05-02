@@ -5,18 +5,22 @@
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",
-    "prestart": "npm run build && func extensions install",
+    "prestart": "npm run build && copyfiles shared/emojis/* dist/ && func extensions install",
     "start:host": "func start",
     "start": "npm run start:host & npm run watch",
     "build:production": "npm run prestart && npm prune --production",
     "test": "echo \"No tests yet...\""
   },
   "dependencies": {
+    "dotenv": "^7.0.0",
     "emoji-dictionary": "^1.0.10",
-    "euclidean-distance": "^1.0.0"
+    "euclidean-distance": "^1.0.0",
+    "node-fetch": "^2.5.0"
   },
   "devDependencies": {
     "@azure/functions": "^1.0.2-beta2",
+    "@types/node": "^11.13.8",
+    "copyfiles": "^2.1.0",
     "jimp": "^0.6.4",
     "typescript": "^3.3.3"
   }
