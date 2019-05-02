@@ -5,7 +5,7 @@
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",
-    "prestart": "npm run build && copyfiles shared/emojis/* dist/ && func extensions install",
+    "prestart": "npm run build && copyfiles shared/emojis/* dist/ && copyfiles shared/proxy-images/* dist/ && func extensions install",
     "start:host": "func start",
     "start": "npm run start:host & npm run watch",
     "build:production": "npm run prestart && npm prune --production",
