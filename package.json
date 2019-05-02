@@ -15,13 +15,13 @@
     "dotenv": "^7.0.0",
     "emoji-dictionary": "^1.0.10",
     "euclidean-distance": "^1.0.0",
-    "node-fetch": "^2.5.0"
+    "node-fetch": "^2.5.0",
+    "jimp": "^0.6.4"
   },
   "devDependencies": {
     "@azure/functions": "^1.0.2-beta2",
     "@types/node": "^11.13.8",
     "copyfiles": "^2.1.0",
-    "jimp": "^0.6.4",
     "typescript": "^3.3.3"
   }
 }
